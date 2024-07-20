@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Login - SpendSmart</title>
+		<link rel="stylesheet" href="../static/styles/main-header.css?{{ cache_id }}" media="all">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link type="text/css" href="../static/styles/account.css?{{ cache_id }}" rel="stylesheet">
+		<script src="../static/scripts/account.js?{{ cache_id }}"></script>
+		<script src="../static/scripts/header.js?{{ cache_id }}"></script>
+	</head>
+	<body>
+		{% include 'main-header.html' %}
+
+		<section class="account-section">
+			<h2>Account Management</h2>
+			<form method="post" action="{{ url_for('auth.delete_account') }}">
+				<button class="delete-account">Delete Account</button>
+			</form>
+		</section>
+	</body>
+</html>
