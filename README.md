@@ -171,6 +171,16 @@ python3 -m api.v1.app
 ```
 python3 -m web_dynamic.app
 ```
+- if you encounter the error: 'ImportError: libmysqlclient.so.21: cannot open shared object file: No such file or directory',
+    try the following:
+    ```
+    export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
+    ```
+- This command manually sets the library path to include /usr/lib/x86_64-linux-gnu (where the libmysqlclient.so.21 file is located).
+then run
+```
+python3 -m api.v1.app
+```
 ## Usage
 ---
 Interacting with the program using APIs
