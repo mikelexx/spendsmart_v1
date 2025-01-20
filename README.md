@@ -101,6 +101,10 @@ pip install SQLAlchemy
 ```
 npm install flatpickr
 ```
+- requests module
+```
+pip install requests
+```
 - pkg-config (for building mysqlclient)
 ```
 sudo apt-get update
