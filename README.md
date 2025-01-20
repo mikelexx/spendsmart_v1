@@ -173,7 +173,7 @@ python3 -m api.v1.app
 ```
 	- activate the client side to serve pages
 ```
-python3 -m web_dynamic.app
+python3 -m web_flask.app
 ```
 - if you encounter the error: 'ImportError: libmysqlclient.so.21: cannot open shared object file: No such file or directory',
     try the following:
