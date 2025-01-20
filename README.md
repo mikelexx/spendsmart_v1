@@ -114,6 +114,10 @@ sudo apt-get install pkg-config
 ```
 sudo apt-get install default-libmysqlclient-dev
 ```
+- flasgger
+```
+pip install flasgger
+```
 - mysqlclient
 ```
 pip install mysqlclient
