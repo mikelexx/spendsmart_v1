@@ -63,7 +63,7 @@ Below is the link to the deployed site
 
 **Deployment**
 
-**HAProxy**: Employed for load balancing and SSL termination, and reverse proxying, ensuring high availability, reliability, and security of the application. 
+**HAProxy**: Employed for load balancing and SSL termination, and reverse proxying, ensuring high availability, reliability, and security of the application.
 
 **Nginx**: Used it as a web server for serving the application, motivated by its reputation for  high performance, stability, and low resource consumption. Nginx is also played a crucial role for handling static files(html, css , jquery and images).
 
@@ -93,7 +93,7 @@ pip install Flask-CORS
 ```
 pip install flask_login
 ```
-- SqlAlchemy 
+- SqlAlchemy
 ```
 pip install SQLAlchemy
 ```
@@ -114,10 +114,18 @@ sudo apt-get install default-libmysqlclient-dev
 ```
 pip install mysqlclient
 ```
-if installing mysqlclient fail, you might to install additional dependencies
+- if installing mysqlclient fail, you might to install additional dependencies
 ```
 sudo apt-get install build-essential python3-dev
 ```
+- install gcc-11
+```
+sudo apt install build-essential manpages-dev software-properties-common
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt update && sudo apt install gcc-11 g++-11
+```
+- then re-install the mysqlclient
+
 ***mysql database configuration***
 - install mysql
 ```
@@ -155,7 +163,7 @@ while inside root directory `spendsmart`
 ```
 python3 -m api.v1.app
 ```
-	- activate the client side to serve pages 
+	- activate the client side to serve pages
 ```
 python3 -m web_dynamic.app
 ```
@@ -577,7 +585,7 @@ adminpc@mike:~/spendsmart$ curl -X GET http://localhost:5011/api/v1/users/ee9598
 ```
 DELETE /api/v1/collections/<collection_id>
 ```
-Deletes a collection and all associated expenses; 
+Deletes a collection and all associated expenses;
 **Parameters:**
 `collection_id` (string): ID of the collection
 **Response:**
@@ -1201,14 +1209,14 @@ Open  browser of your favourite choice e.g chrome
 
 5. viewing and deleting  notifications:
 	- click on "Notifications(`number of notifications present`)" button on the navbar to view current notifications, displayed as toasts.
-	![notifications](/screenshots/notification-github.png)	
+	![notifications](/screenshots/notification-github.png)
 	- click on the `X` symbol on a notification to delete that notification.
 6. Logout:
 	- to logout, click the "Logout" button on the navigation bar, next time you visit the site, you'll be required to enter your credentials to get signed in.
 7. Delete account
 	![delete-account](/screenshots/account-github.png)
 	- to delete your account, click the "Account" button on navigation bar and then the 'delete account' button under account management on the resulting page. This will delete all information related to you from the site.These includes your account credentials, expenses made, notifications and budgets being monitored.
-	
+
 
 8. View or edit recent purchases:
 	![recent-purchases](/screenshots/dashboard-github.png)
